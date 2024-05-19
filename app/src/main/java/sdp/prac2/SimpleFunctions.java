@@ -13,5 +13,5 @@ public class SimpleFunctions {
             }
             return total; 
      }
-    }
+    }  
 }
