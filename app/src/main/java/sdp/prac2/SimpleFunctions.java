@@ -14,5 +14,16 @@ public class SimpleFunctions {
         }
         return sum;
     }
-
+    public List<Integer> Task6(List<Integer> numbers) {
+        List<Integer> result = new ArrayList<>();
+        for (int n : numbers) {
+            if (n % 100 == 0) {
+                result.add(n);
+            } else {
+                result.add(((n / 100) + 1) * 100);
+            }
+        }
+        return result;
+    }
+    
 }
