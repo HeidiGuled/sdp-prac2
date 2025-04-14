@@ -25,7 +25,7 @@ public class SimpleFunctions {
         }
         return result;
     }
-    public List<String> Task2 (List<String> lst){
+    public static List<String> Task2 (List<String> lst){
         List<String> result = new ArrayList<>();
 
         for(String s: lst){
