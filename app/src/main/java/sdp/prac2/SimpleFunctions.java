@@ -25,5 +25,16 @@ public class SimpleFunctions {
         }
         return result;
     }
+    public List<String> Task2 (List<String> lst){
+        List<String> result = new ArrayList<>();
+
+        for(String s: lst){
+            if(s.length()>0){
+                result.add(s.substring(1));
+            }
+        }
+        return result;
+    }
+
     
 }
