@@ -5,6 +5,19 @@ import java.util.*;
 public class SimpleFunctions {
     public SimpleFunctions() {}
 
+    /*A method that accepts two lists of integers a and b, and adds up the elements from a 
+    whose indexes are specified by b. If any index in b is out-of-range for a, it then ignores that index.*/
+
+    public static int task1 (List<Integer> a, List<Integer> b){
+        int sum =0;
+        for (int i = 0; i < b.size(); i++) {
+            int index = b.get(i); //gets the index stored in b at position i
+            if (index >= 0 && index < a.size()) {
+                sum += a.get(index); //Adds the value from a at the given index to hte sum
+            }
+        }
+        return sum;
+        
     public static int Task1(List<Integer> a, List<Integer> b) {
         int sum = 0;
         for (int index : b) {
