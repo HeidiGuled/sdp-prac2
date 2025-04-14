@@ -6,5 +6,35 @@ package sdp.prac2;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.Arrays;
+import java.util.List;
+
 class AppTest {
+
+@Test
+    void testTask2_RemovesFirstCharacter() {
+        // Arrange
+        List<String> input = Arrays.asList("apple", "banana", "grape");
+        List<String> expected = Arrays.asList("pple", "anana", "rape");
+
+        // Act
+        List<String> result = SimpleFunctions.Task2(input);
+
+        // Assert
+        assertEquals(expected, result);
+    }
+
+    @Test
+    void testTask2_RemovesEmptyAndSingleCharStrings() {
+        // Arrange
+        List<String> input = Arrays.asList("x", "", "ok", "a");
+        List<String> expected = Arrays.asList("k");
+
+        // Act
+        List<String> result = SimpleFunctions.Task2(input);
+
+        // Assert
+        assertEquals(expected, result);
+    }
 }
+
