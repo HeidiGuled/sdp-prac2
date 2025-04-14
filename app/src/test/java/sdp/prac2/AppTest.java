@@ -36,5 +36,20 @@ class AppTest {
         // Assert
         assertEquals(expected, result);
     }
+    @Test
+    public void Task3_testBalancedParentheses(){
+        String input = "(()())";
+        boolean expected = true;
+        boolean actual = SimpleFunctions.Task3(input);
+        assertEquals(expected, actual);
+    }
+    @Test 
+    public void task3_testUnbalancedOarentheses(){
+        String input = "(()";
+        boolean expected = false;
+        boolean actual = SimpleFunctions.Task3(input);
+        assertEquals(expected, actual);
+    }
+
 }
 
