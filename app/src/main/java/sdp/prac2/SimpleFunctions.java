@@ -48,6 +48,15 @@ public class SimpleFunctions {
         }
         return result;
     }
-
-    
+    public static boolean Task5(List<Integer> list) {
+        if (list == null || list.size() <= 1) {
+            return true;
+        }
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (list.get(i) > list.get(i + 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
