@@ -50,6 +50,41 @@ class AppTest {
         boolean actual = SimpleFunctions.Task3(input);
         assertEquals(expected, actual);
     }
+    @Test
+    public void testTask6BasicRounding() {
+        List<Integer> input = Arrays.asList(15, 101, 250, 399);
+        List<Integer> expected = Arrays.asList(100, 200, 300, 400);
+        List<Integer> result = SimpleFunctions.Task6(input);
+        assertEquals(expected, result);
+    }
+    @Test
+    public void testTask6NoRoundingNeeded() {
+        List<Integer> input = Arrays.asList(100, 200, 300, 400);
+        List<Integer> expected = Arrays.asList(100, 200, 300, 400);
+        List<Integer> result = SimpleFunctions.Task6(input);
+        assertEquals(expected, result);
+    }
+    @Test
+    public void testTask6EdgeCases() {
+        List<Integer> input = Arrays.asList(0, -50, -101, -200);
+        List<Integer> expected = Arrays.asList(0, 0, -100, -200);
+        List<Integer> result = SimpleFunctions.Task6(input);
+        assertEquals(expected, result);
+    }
+    @Test
+    public void testTask6EmptyList() {
+        List<Integer> input = Arrays.asList();
+        List<Integer> expected = Arrays.asList();
+        List<Integer> result = SimpleFunctions.Task6(input);
+        assertEquals(expected, result);
+    }
+    @Test
+    public void testTask6LargeNumbers() {
+        List<Integer> input = Arrays.asList(999, 1001, 1500);
+        List<Integer> expected = Arrays.asList(1000, 1100, 1500);
+        List<Integer> result = SimpleFunctions.Task6(input);
+        assertEquals(expected, result);
+    }
 
 }
 
