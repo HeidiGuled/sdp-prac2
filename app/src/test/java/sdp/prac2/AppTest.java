@@ -85,6 +85,33 @@ class AppTest {
         List<Integer> result = SimpleFunctions.Task6(input);
         assertEquals(expected, result);
     }
+    @Test
+    public void testTask1_NormalCase() {
+        List<Integer> a = Arrays.asList(10, 20, 30);
+        List<Integer> b = Arrays.asList(0, 2);
+        int expected = 40;
+        int result = SimpleFunctions.task1(a, b);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testTask1_WithInvalidIndex() {
+        List<Integer> a = Arrays.asList(5, 15, 25);
+        List<Integer> b = Arrays.asList(1, 5); // 5 is out of range
+        int expected = 15;
+        int result = SimpleFunctions.task1(a, b);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testTask1_EmptyIndexList() {
+        List<Integer> a = Arrays.asList(1, 2, 3);
+        List<Integer> b = new ArrayList<>();
+        int expected = 0;
+        int result = SimpleFunctions.task1(a, b);
+        assertEquals(expected, result);
+    }
+
 
 }
 
