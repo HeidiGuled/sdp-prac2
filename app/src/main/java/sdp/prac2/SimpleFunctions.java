@@ -8,6 +8,8 @@ public class SimpleFunctions {
     /*A method that accepts two lists of integers a and b, and adds up the elements from a 
     whose indexes are specified by b. If any index in b is out-of-range for a, it then ignores that index.*/
 
+	//TASK 1 
+
     public static int task1 (List<Integer> a, List<Integer> b){
         int sum =0;
         for (int i = 0; i < b.size(); i++) {
@@ -27,6 +29,7 @@ public class SimpleFunctions {
         }
         return sum;
     }
+	    //task 6 
     public List<Integer> Task6(List<Integer> numbers) {
         List<Integer> result = new ArrayList<>();
         for (int n : numbers) {
@@ -38,6 +41,8 @@ public class SimpleFunctions {
         }
         return result;
     }
+
+	    //task 2 
     public static List<String> Task2 (List<String> lst){
         List<String> result = new ArrayList<>();
 
@@ -48,6 +53,7 @@ public class SimpleFunctions {
         }
         return result;
     }
+	    //task 4
     public static ArrayList<Integer> Task4(ArrayList<Integer> a , ArrayList<Integer> b) {
 		ArrayList<Integer> c = new ArrayList<Integer>();
 		if (a.size() != b.size() ){
@@ -58,6 +64,8 @@ public class SimpleFunctions {
 			}
 			return c;
 		}
+
+	    //task 5
     public static boolean Task5(List<Integer> list) {
         if (list == null || list.size() <= 1) {
             return true;
