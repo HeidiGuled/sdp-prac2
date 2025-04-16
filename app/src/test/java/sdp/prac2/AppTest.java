@@ -50,6 +50,26 @@ class AppTest {
         boolean actual = SimpleFunctions.Task3(input);
         assertEquals(expected, actual);
     }
+    
+    @Test
+    void testSortedList() {
+        ArrayList<Integer> sortedList = Arrays.asList(1, 2, 3, 4, 5);
+        assertTrue(SimpleFunctions.Task5(sortedList));
+    }
+
+    @Test
+    void testUnsortedList() {
+        ArrayList<Integer> unsortedList = Arrays.asList(5, 3, 2, 4, 1);
+        assertFalse(SimpleFunctions.Task5(unsortedList));
+    }
+
+    @Test
+    void testEmptyList() {
+        ArrayList<Integer> emptyList = Arrays.asList();
+        assertTrue(SimpleFunctions.Task5.(emptyList)); 
+    }
+
+    
     @Test
     public void testTask6BasicRounding() {
         List<Integer> input = Arrays.asList(15, 101, 250, 399);
