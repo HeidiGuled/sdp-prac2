@@ -48,6 +48,16 @@ public class SimpleFunctions {
         }
         return result;
     }
+    public static ArrayList<Integer> Task4(ArrayList<Integer> a , ArrayList<Integer> b) {
+		ArrayList<Integer> c = new ArrayList<Integer>();
+		if (a.size() != b.size() ){
+			return null;
+		}else {
+			for(int i = 0 ; i < a.size() ; i++ ){
+				c.add(a.get(i) * b.get( b.size() - 1 - i) );
+			}
+			return c;
+		}
     public static boolean Task5(List<Integer> list) {
         if (list == null || list.size() <= 1) {
             return true;
